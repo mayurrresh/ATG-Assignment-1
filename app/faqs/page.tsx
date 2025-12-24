@@ -45,3 +45,29 @@ const faqs = [
       "Yes. The system is built entirely using Tailwind CSS.",
   },
 ];
+
+export default function FAQsPage() {
+  return (
+    <main className="min-h-screen bg-black text-white px-6 py-20">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-semibold mb-10">FAQs</h1>
+
+        <div className="space-y-6">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="rounded-xl bg-[#1a1a1a] p-6"
+            >
+              <h3 className="text-lg font-medium">
+                {faq.question}
+              </h3>
+              <p className="mt-2 text-gray-400">
+                {faq.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+}
