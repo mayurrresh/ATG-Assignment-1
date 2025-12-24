@@ -1,3 +1,5 @@
+export const  dynamic = "force-dynamic";
+
 import { fetchUsers } from "@/app/lib/users";
 import StatusCard from "@/components/StatusCard";
 import UsersList from "@/components/UsersList";
